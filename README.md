@@ -27,3 +27,17 @@
 ---
 
 > 📖 理论来源：基于《置身钉内》AI 产品开发全维复盘报告提炼得出
+
+---
+
+## SDD Doc Generator — 需求开发全流程文档生成器
+
+围绕需求理解与澄清，逐步生成产品规格（PRD）、设计方案、执行计划，并支持编码实现、文档评审、实现审计与归档。
+
+**触发场景**：PRD、产品规格、设计文档、技术方案、执行计划、开始开发、编码实现、实现审计、文档归档
+
+**核心流程**：`spec` → `design` → `plan` → `apply` → `verify` → `check-doc` → `archive`
+
+**调用方式**：`/sdd-doc-generator [阶段] [主题] [+补充约束]`
+
+详见 [`skills/sdd-doc-generator/SKILL.md`](skills/sdd-doc-generator/SKILL.md)。

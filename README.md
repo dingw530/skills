@@ -2,6 +2,32 @@
 
 ---
 
+## 安装
+
+使用 [`skills`](https://github.com/vercel-labs/skills) CLI 从本仓库安装 skill。CLI 要求 **Node.js >= 22.20.0**。可用 `node -v` 检查版本。运行以下命令后，按提示选择安装范围和目标 Agent：
+
+```bash
+npx skills add dingw530/skills
+```
+
+也可以只安装指定 skill：
+
+```bash
+npx skills add dingw530/skills --skill product-pulse
+npx skills add dingw530/skills --skill sdd-doc-generator
+```
+
+---
+
+## Skill 清单
+
+| Skill | 用途 | 说明 |
+|---|---|---|
+| [`product-pulse`](skills/product-pulse/SKILL.md) | AI 产品诊断与评估 | 从发心、用户、能力边界、反馈系统等七个维度评估产品，输出评分卡、风险预警和改进建议。 |
+| [`sdd-doc-generator`](skills/sdd-doc-generator/SKILL.md) | 需求开发流程与文档生成 | 按 `spec`、`design`、`plan`、`apply`、`verify`、`check-doc`、`archive` 阶段推进需求开发。 |
+
+---
+
 ## Product Pulse — AI 产品七维脉搏诊断框架
 
 对 AI 产品/项目进行结构化深度评估，涵盖七个维度，输出定量评分卡 + 定性红灯预警 + 竞品对比。

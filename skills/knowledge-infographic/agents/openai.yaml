@@ -1,0 +1,4 @@
+interface:
+  display_name: "书文知识图解"
+  short_description: "从书籍章节或文章提炼核心知识，用 imagegen 生成关系清晰的中文知识图解。"
+  default_prompt: "使用 $knowledge-infographic 将提供的书籍章节或文章整理成一张内容丰富、关系清晰的知识图解。"

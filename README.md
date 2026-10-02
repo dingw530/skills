@@ -15,6 +15,7 @@ npx skills add dingw530/skills
 ```bash
 npx skills add dingw530/skills --skill product-pulse
 npx skills add dingw530/skills --skill sdd-doc-generator
+npx skills add dingw530/skills --skill knowledge-infographic
 ```
 
 ---
@@ -25,6 +26,7 @@ npx skills add dingw530/skills --skill sdd-doc-generator
 |---|---|---|
 | [`product-pulse`](skills/product-pulse/SKILL.md) | AI 产品诊断与评估 | 从发心、用户、能力边界、反馈系统等七个维度评估产品，输出评分卡、风险预警和改进建议。 |
 | [`sdd-doc-generator`](skills/sdd-doc-generator/SKILL.md) | 需求开发流程与文档生成 | 按 `spec`、`design`、`plan`、`apply`、`verify`、`check-doc`、`archive` 阶段推进需求开发。 |
+| [`knowledge-infographic`](skills/knowledge-infographic/SKILL.md) | 书文知识图解（适用于 Codex） | 从书籍、PDF 指定章节、文章或笔记提炼核心知识及关系，使用 imagegen 生成文字清晰的知识图解。 |
 
 ---
 
@@ -69,3 +71,30 @@ npx skills add dingw530/skills --skill sdd-doc-generator
 **调用方式**：`/sdd-doc-generator [阶段] [主题] [+补充约束]`
 
 详见 [`skills/sdd-doc-generator/SKILL.md`](skills/sdd-doc-generator/SKILL.md)。
+
+---
+
+## Knowledge Infographic — 书文知识图解
+
+![Knowledge Infographic 介绍图](docs/knowledge-infographic.png)
+
+**适用平台**：Codex（需要内置 imagegen 支持）。
+
+将书籍、PDF 指定章节、文章或笔记转成可阅读、可复习的知识图解，使用 imagegen 生成位图，以图形表达因果、流程、循环、依赖和对比等关系。
+
+**触发场景**：把指定章节画成一张图、文章知识可视化、笔记知识图解、补充或修正已有知识图解
+
+**核心流程**：确认材料与范围 → 提炼知识与关系 → 设计视觉表达 → imagegen 生成 → 核对原文与文字 → 局部修正与交付
+
+**输出物**：默认一张沿用材料主要语言的知识图解、图片文件及实际生成与修正提示词。
+
+**使用示例**：
+
+```text
+使用 $knowledge-infographic 把这本 PDF 的 2.1–2.3 画成一张中文知识图，带工具循环和缓存示意。
+把这篇文章生成一张知识图解，重点表现观点之间的因果关系。
+```
+
+**适用边界**：需要内置 imagegen 支持；不用于把整本书转换成知识库技能，也不替代精确可编辑的 SVG、draw.io 或代码架构图。
+
+详见 [`skills/knowledge-infographic/SKILL.md`](skills/knowledge-infographic/SKILL.md)。

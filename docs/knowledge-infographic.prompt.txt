@@ -1,0 +1,32 @@
+Use case: infographic-diagram
+Asset type: Chinese introduction poster for the knowledge-infographic Codex skill, used in a GitHub README.
+Create one polished landscape editorial infographic, roughly 3:2. This is an introduction to the skill itself, not a technical architecture diagram. Large crisp Chinese text with excellent legibility.
+
+Art direction: an elegant knowledge atlas on warm ivory paper, deep ink typography, restrained teal and amber accents, precise fine-line illustration and light pencil texture. Asymmetric editorial layout with generous whitespace; no generic three-column cards, no dashboard, no corporate slide template, no photorealism. Do not use other skills' introduction layouts. Use a visual transformation as the central narrative: on the left, an open book, a marked PDF page, an article sheet and a notebook; their highlighted snippets stream into a small central content blueprint containing concept nodes and relation arrows; on the right, a large finished knowledge map with branches, a short causal chain and a feedback loop. Visually convey that source material becomes an organized diagram. This is a conceptual illustration, not a screenshot of an actual software UI.
+
+Top-left title, exactly: "knowledge-infographic"
+Large Chinese heading exactly: "书文知识图解"
+Subtitle exactly: "把原文中的知识与关系，变成一张可阅读、可复习的图"
+Top-right small clearly readable badge exactly: "适用于 Codex"
+A smaller badge nearby exactly: "内置 imagegen"
+
+The main illustrated transformation has the following clearly readable labels:
+Source group title: "读取原文"
+Four source labels: "书籍" "PDF 章节" "文章" "笔记"
+Central blueprint title: "提炼知识与关系"
+Three concise labels around central nodes: "核心概念" "关键机制" "适用边界"
+Finished map title: "生成知识图解"
+Relationship captions associated with actual visual examples: "因果" "流程" "循环" "对比"
+Use arrows between the three stages, and connect arrows to exact stages.
+
+Below the illustration, a slim horizontal workflow with exact text:
+"确认范围 → 提炼关系 → 视觉表达 → imagegen 生成 → 核对与修正"
+Keep it readable and allow adequate horizontal room.
+
+A quiet footer section with three editorial lines, not a cluster of cards:
+"忠于原文：保留限定条件与来源，核对文字和关系"
+"交付：知识图解图片 + 生成与修正提示词"
+"边界：不用于整本书转技能，不替代精确可编辑的架构图"
+Bottom tiny source line, still readable: "来源：skills/knowledge-infographic/SKILL.md"
+
+Render exact Chinese and Latin strings correctly. No invented numbers, ratings, performance claims, additional features, fake screenshots, brand logos, or unrelated mascots. Avoid tiny crowded text. The final knowledge map can use only the supplied concise relationship labels with abstract graphical nodes, no invented factual content. Make the illustration and hierarchy attractive enough as a standalone introduction image.

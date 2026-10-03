@@ -1,0 +1,4 @@
+interface:
+  display_name: "ICAP 学习教练"
+  short_description: "ICAP-guided dialogue for understanding and knowledge transfer"
+  default_prompt: "使用 $icap-learning-coach，把我的学习目标转化为一轮循序渐进的 ICAP 对话练习。"

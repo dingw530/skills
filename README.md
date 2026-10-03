@@ -16,6 +16,7 @@ npx skills add dingw530/skills
 npx skills add dingw530/skills --skill product-pulse
 npx skills add dingw530/skills --skill sdd-doc-generator
 npx skills add dingw530/skills --skill knowledge-infographic
+npx skills add dingw530/skills --skill icap-learning-coach
 ```
 
 ---
@@ -27,6 +28,7 @@ npx skills add dingw530/skills --skill knowledge-infographic
 | [`product-pulse`](skills/product-pulse/SKILL.md) | AI 产品诊断与评估 | 从发心、用户、能力边界、反馈系统等七个维度评估产品，输出评分卡、风险预警和改进建议。 |
 | [`sdd-doc-generator`](skills/sdd-doc-generator/SKILL.md) | 需求开发流程与文档生成 | 按 `spec`、`design`、`plan`、`apply`、`verify`、`check-doc`、`archive` 阶段推进需求开发。 |
 | [`knowledge-infographic`](skills/knowledge-infographic/SKILL.md) | 书文知识图解（适用于 Codex） | 从书籍、PDF 指定章节、文章或笔记提炼核心知识及关系，使用 imagegen 生成文字清晰的知识图解。 |
+| [`icap-learning-coach`](skills/icap-learning-coach/SKILL.md) | AI 辅助学习与练习 | 基于 ICAP 框架，通过主动回忆、自主解释、反馈纠错和迁移练习，帮助理解与应用知识。 |
 
 ---
 
@@ -98,3 +100,28 @@ npx skills add dingw530/skills --skill knowledge-infographic
 **适用边界**：需要内置 imagegen 支持；不用于把整本书转换成知识库技能，也不替代精确可编辑的 SVG、draw.io 或代码架构图。
 
 详见 [`skills/knowledge-infographic/SKILL.md`](skills/knowledge-infographic/SKILL.md)。
+
+---
+
+## ICAP Learning Coach — AI 辅助学习教练
+
+![ICAP Learning Coach 介绍图](docs/icap-learning-coach.png)
+
+基于 ICAP 学习框架，引导学习者从接收信息走向主动操作、自主解释与互动共建，根据学习目标、基础和时间安排短学习循环。
+
+**触发场景**：学习概念、理解原理、解题练习、复习笔记、回述讲解、苏格拉底式提问、制定学习计划
+
+**四种参与模式**：Passive（接收解释与示例）→ Active（回忆、选择与操作）→ Constructive（生成解释、预测与解法）→ Interactive（讨论、纠错与共同构建理解）
+
+**核心流程**：明确学习目标 → 提供最小必要输入 → 引导学习者作答 → 诊断并反馈 → 迁移练习 → 回述与复习
+
+**使用示例**：
+
+```text
+使用 $icap-learning-coach 帮我理解 Agent 的工具调用循环，通过回述检查我的理解。
+使用 $icap-learning-coach 陪我练习一道算法题，先给提示，等我尝试后再反馈。
+```
+
+**使用原则**：按需要选择参与模式，不强制走完四个阶段；明确要求直接回答或时间紧张时，先给结论或简明示例。
+
+详见 [`skills/icap-learning-coach/SKILL.md`](skills/icap-learning-coach/SKILL.md)。

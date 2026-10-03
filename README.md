@@ -34,6 +34,8 @@ npx skills add dingw530/skills --skill icap-learning-coach
 
 ## Product Pulse — AI 产品七维脉搏诊断框架
 
+> 📖 理论来源：基于《置身钉内》AI 产品开发全维复盘报告提炼得出
+
 对 AI 产品/项目进行结构化深度评估，涵盖七个维度，输出定量评分卡 + 定性红灯预警 + 竞品对比。
 
 ![Product Pulse 框架图](docs/product-pulse.png)
@@ -53,10 +55,6 @@ npx skills add dingw530/skills --skill icap-learning-coach
 **评分体系**：14 分制（每维度 2 分），等级评定 🟢 A 级（11-14） / 🟡 B 级（8-10） / 🔴 C 级（4-7） / ⛔ D 级（0-3）
 
 **输出物**：逐维度评分及依据 → 🚨 红灯预警（P0/P1/P2）→ 📊 综合评分卡 → 关键教训与行动建议 → 多产品对比总表（可选）
-
----
-
-> 📖 理论来源：基于《置身钉内》AI 产品开发全维复盘报告提炼得出
 
 ---
 

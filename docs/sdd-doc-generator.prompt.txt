@@ -1,0 +1,17 @@
+Redesign the provided infographic with a clearly more refined, mature editorial systems-diagram aesthetic. Preserve every label and the exact information architecture, but substantially change the visual language: remove playful cartoon styling, glossy gradients, thick rounded cards, and heavy shadows. Use a crisp Swiss editorial grid, warm paper white, ink navy, one muted teal and one restrained amber accent, thin precise rules, flat geometric icons, excellent spacing, and disciplined typography. Use subtle section numbering and consistent alignment. The result should feel like a polished design-system / engineering handbook infographic.
+
+Keep all text exactly as written, with no additions or omissions:
+"SDD Doc Generator"
+"按需求规模选择最小必要流程"
+"需求澄清"
+"L0 · quick"
+"直接修改 · 定向验证"
+"L1 · 轻量实现"
+"记录目标 · 范围 · 验收 · 验证"
+"L2 · 完整 SDD + Harness"
+"spec → design → plan → apply → verify → check-doc → archive"
+"AC 验收标准 → 不变量 → Probe 探针 → 证据产物 → 状态判定"
+"证据充分才 PASS；未验证不归档"
+"逐 TP / AC 追溯 · 差异审计 · 风险记录"
+
+Layout: wide landscape. A slim left column for 需求澄清 branches into three horizontal process bands. Keep L0 and L1 compact and visually secondary. Give L2 the main area with an orderly seven-step numbered pipeline; below it a single aligned evidence chain; finish with a clear gate line and bottom footer for traceability/audit/risk. Keep text large and perfectly legible at README display size. The full seven-stage sequence belongs only to L2. No people or cartoon characters. No gradients. No drop shadows. No watermark.

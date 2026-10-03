@@ -64,11 +64,11 @@ npx skills add dingw530/skills --skill icap-learning-coach
 
 ![SDD Doc Generator 介绍图](docs/sdd-doc-generator.png)
 
-围绕需求理解与澄清，逐步生成产品规格（PRD）、设计方案、执行计划，并支持编码实现、文档评审、实现审计与归档。
+先澄清需求并按规模分流：L0 走 quick 定向修改与验证，L1 轻量实现并记录目标、范围、验收和验证，L2 使用完整 SDD + Harness 流程。完整流程通过逐 TP/AC 追溯、验收证据契约和完成门禁，确保只有证据充分的验收项才标记为 PASS 并归档。
 
 **触发场景**：PRD、产品规格、设计文档、技术方案、执行计划、开始开发、编码实现、实现审计、文档归档
 
-**核心流程**：`spec` → `design` → `plan` → `apply` → `verify` → `check-doc` → `archive`
+**核心流程**：按 L0/L1/L2 分流；L2 执行 `spec` → `design` → `plan` → `apply` → `verify` → `check-doc` → `archive`
 
 **调用方式**：`/sdd-doc-generator [阶段] [主题] [+补充约束]`
 
